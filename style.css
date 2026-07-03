@@ -1,0 +1,142 @@
+body{ 
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    min-height: 100vh;
+
+    margin-top: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #4facfe,
+        #00f2fe
+    );
+
+    animation: gradientMove 5s infinite alternate;
+
+}
+
+@keyframes gradientMove{
+
+    from{
+
+        background-position: left;
+
+    }
+
+    to{
+
+        background-position: right;
+
+    }
+
+}
+
+.card{
+
+    background: rgba(255,255,255,0.2);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    width: 350px;
+
+    margin: auto;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+
+}
+
+input{
+
+    padding: 12px;
+
+    width: 200px;
+
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+}
+
+button{
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+    margin: 5px;
+
+}
+
+button:hover{
+
+    transform: scale(1.05);
+
+    opacity: 0.8;
+
+}
+
+#weatherResult{
+
+    margin-top: 20px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+.dark{
+
+    background: black;
+
+    color: white;
+
+}
+
+#clock{
+
+    margin-bottom: 20px;
+
+}
